@@ -14,7 +14,7 @@ const scroll = () => {
     const toggleUp = () => {
         const position = servicesId.getBoundingClientRect();
 
-        if (position.top < window.innerHeight) {
+        if (position.top < window.innerHeight && position.bottom > 0) {
           upLink.style.display = 'block';
         } else {
           upLink.style.display = 'none';
