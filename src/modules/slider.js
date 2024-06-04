@@ -1,7 +1,6 @@
 const slider = () => {
-    const two = 'slider';
 
-    console.log(two);
+    console.log();
 }
 
 export default slider;

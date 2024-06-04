@@ -2,7 +2,7 @@ const scroll = () => {
     const menuLink = document.querySelectorAll('.top-menu>ul>li>a[href^="#"]');
     const upLink = document.querySelector('.up');
     const servicesId = document.getElementById('services');
-    console.log(servicesId);
+    upLink.style.display = 'none';
 
     menuLink.forEach((anchor) => {
         anchor.addEventListener('click', (e) => {
@@ -11,7 +11,7 @@ const scroll = () => {
         })
     });
 
-    function toggleUp() {
+    const toggleUp = () => {
         const position = servicesId.getBoundingClientRect();
 
         if (position.top < window.innerHeight) {
